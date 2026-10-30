@@ -27,3 +27,8 @@ __pycache__/
 .venv/
 venv/
 .DS_Store
+
+# Runtime heartbeat (never source code)
+health-state.json
+health-drive.json
+stato-estrazione-axios.md

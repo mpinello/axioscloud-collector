@@ -6,3 +6,7 @@
 - Flusso originario di comunicazioni/download/Drive verificato nell'installazione personale da cui deriva il codice. Le modifiche del profilo generalizzato per le comunicazioni e per Drive sono coperte da test offline, non da un nuovo upload reale della versione pubblicabile.
 - Nessuna verifica su più istituti, SSO, OTP, CAPTCHA o Windows nativo. Non promettere compatibilità con queste varianti.
 - CI definita per Python 3.11/3.13 su Linux e macOS, senza credenziali o collegamenti al registro. Consultare gli esiti effettivi della scheda Actions per ciascun commit.
+
+## Estensione 0.2.0
+
+23 test offline complessivi: aggiunti login fallito con Drive ancora disponibile, conservazione dello stato di guasto durante un nuovo tentativo, soglia strettamente oltre 24 ore, timestamp invalidi/futuri e riuso dell'ID Drive. Il controllo cloud resta una responsabilità del monitor configurato dall'utente; i test delle regole non dimostrano che una notifica push sia stata consegnata.

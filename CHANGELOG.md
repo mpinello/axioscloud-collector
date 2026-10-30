@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.2.0 — 2026-10-30
+
+- File di controllo locale/Drive prima e dopo ogni tentativo, incluso login Axios fallito.
+- Stati `running`/`success`/`failed`, orari UTC, ultimo successo e codice di fase senza dettagli sensibili.
+- Aggiornamento sullo stesso ID Drive e verifica MD5/dimensione.
+- Regole di riferimento per failed, assenza di segnale oltre 24 ore e timestamp invalidi; guida per un monitor cloud esterno.
+- Cinque nuovi test sintetici su errori, soglia temporale, stato persistente e aggiornamento del file.
+
 ## 0.1.0 — 2026-10-29
 
 Prima versione estratta da un'installazione personale e resa configurabile.
